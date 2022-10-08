@@ -470,6 +470,17 @@
       </div>
     </section>
 
+    <!-- FOOTER -->
+    <footer id="main-footer" class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6 ml-auto">
+            <p class="lead">Copyright &copy; <span id="year"></span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
@@ -485,5 +496,10 @@
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document
+        .getElementById("year")
+        .appendChild(document.createTextNode(new Date().getFullYear()));
+    </script>
   </body>
 </html>
